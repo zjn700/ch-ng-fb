@@ -11,13 +11,15 @@ import { VocabularyComponent } from './vocabulary/vocabulary.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GrammarComponent,
     FlashcardsComponent,
-    VocabularyComponent
+    VocabularyComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

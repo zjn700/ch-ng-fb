@@ -2,6 +2,7 @@
   //color: red;
    //font-size: 16px;
    //font-size: 36px;
+   //test
    //vertical-align: middle;
 //}
 .grid-container {
@@ -52,6 +53,14 @@
 .footer { grid-area: footer; 
   min-height: 12vh;
   //background-color: rgba(255, 255, 255, 0.5);
+}
+.hide-me {
+  display:none;
+  //visibility:hidden;
+}
+.show-me {
+  //padding:10px;
+  margin-top: 5px;
 }
 @media (max-width: 415px) {
   .grid-container {

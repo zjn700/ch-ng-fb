@@ -534,19 +534,33 @@
 <div class="grid-container">
   <div class="starter">
     <!--<i class="material-icons">account_circle</i>-->
-    <button mat-icon-button color="warn">
-      <i class="material-icons">account_circle</i>
+    
+    <button  mat-icon-button color="warn" (click)="toggleProfile()">
+      <i [className]="profile ? 'hide-me' : 'material-icons show-me'" class="material-icons">account_circle</i>
+      <i [className]="profile ? 'material-icons show-me' : 'hide-me'" class="material-icons">home</i>
       <!--<mat-icon>account_circle</mat-icon>-->
-      <!--=-->
+      <!--<mat-icon>account_circle</mat-icon>-->
     </button>
   </div>
   <div class="header">
-    <!--<nav>-->
+    <nav [className]="profile ? 'hide-me' : 'show-me'">
       <a class="button" routerLinkActive="activeButton" routerLink="/vocabulary">Vocabulary</a> 
       <a class="button" routerLinkActive="activeButton" routerLink="/grammar">Grammar</a>  
       <a class="button" routerLinkActive="activeButton" routerLink="/flashcards">Flashcards</a>
-    <!--</nav>-->
+    </nav>
+    <nav [className]="profile ? 'show-me' : 'hide-me'">
+      <a class="button" routerLinkActive="activeButton" routerLink="/profile">Profile</a> 
+      <!--<a class="button" routerLinkActive="activeButton" routerLink="/grammar">Xrammar</a>  -->
+      <!--<a class="button" routerLinkActive="activeButton" routerLink="/flashcards">Xlashcards</a>-->
+    </nav>
   </div>
+  <!--<div  [className]="profile ? 'header' : 'hide-me'">-->
+    <!--[><nav><]-->
+      <!--<a class="button" routerLinkActive="activeButton" routerLink="/vocabulary">xocabulary</a> -->
+      <!--<a class="button" routerLinkActive="activeButton" routerLink="/grammar">xrammar</a>  -->
+      <!--<a class="button" routerLinkActive="activeButton" routerLink="/flashcards">xlashcards</a>-->
+    <!--[></nav><]-->
+  <!--</div>-->
   <div class="main">
     <router-outlet></router-outlet>
   </div>
