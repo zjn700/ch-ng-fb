@@ -531,17 +531,26 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
+    <!--<mat-tab-group>-->
+        <!--<mat-tab >-->
+          <!--<ng-template mat-tab-label>-->
+            <!--<mat-icon class="example-tab-icon">thumb_up</mat-icon>-->
+          <!--</ng-template>-->
+          <!--Content 1 </mat-tab>-->
+        <!--<mat-tab label="Second"> Content 2 </mat-tab>-->
+        <!--<mat-tab label="Third"> Content 3 </mat-tab>-->
+    <!--</mat-tab-group>-->
+
 <div class="grid-container">
   <div class="starter">
-    <!--<i class="material-icons">account_circle</i>-->
-    
-    <button  mat-icon-button color="warn" (click)="toggleProfile()">
-      <i [className]="profile ? 'hide-me' : 'material-icons show-me'" class="material-icons">account_circle</i>
-      <i [className]="profile ? 'material-icons show-me' : 'hide-me'" class="material-icons">home</i>
-      <!--<mat-icon>account_circle</mat-icon>-->
-      <!--<mat-icon>account_circle</mat-icon>-->
+    <button mat-icon-button (click)="goToHome()">
+      <mat-icon [className]="profile ? 'material-icons' : 'material-icons activeTab'" >home</mat-icon>
     </button>
+    <!--<button  mat-icon-button (click)="goToHome()" [disabled]="!profile">-->
+      <!--<i [className]="profile ? 'material-icons' : ' material-icons activeTab'" class="material-icons">home</i>-->
+    <!--</button>-->
   </div>
+
   <div class="header">
     <nav [className]="profile ? 'hide-me' : 'show-me'">
       <a class="button" routerLinkActive="activeButton" routerLink="/vocabulary">Vocabulary</a> 
@@ -550,19 +559,20 @@
     </nav>
     <nav [className]="profile ? 'show-me' : 'hide-me'">
       <a class="button" routerLinkActive="activeButton" routerLink="/profile">Profile</a> 
-      <!--<a class="button" routerLinkActive="activeButton" routerLink="/grammar">Xrammar</a>  -->
-      <!--<a class="button" routerLinkActive="activeButton" routerLink="/flashcards">Xlashcards</a>-->
     </nav>
   </div>
-  <!--<div  [className]="profile ? 'header' : 'hide-me'">-->
-    <!--[><nav><]-->
-      <!--<a class="button" routerLinkActive="activeButton" routerLink="/vocabulary">xocabulary</a> -->
-      <!--<a class="button" routerLinkActive="activeButton" routerLink="/grammar">xrammar</a>  -->
-      <!--<a class="button" routerLinkActive="activeButton" routerLink="/flashcards">xlashcards</a>-->
-    <!--[></nav><]-->
-  <!--</div>-->
+
+  <div class="ender">
+    <button  mat-icon-button  (click)="goToProfile()" [disabled]="profile">
+      <mat-icon [className]="profile ? 'material-icons activeTab' : 'material-icons'" >account_circle</mat-icon>
+      <!--<i [className]="profile ? 'material-icons activeTab' : 'material-icons'" class="material-icons">account_circle</i>-->
+    </button>
+  </div>
+
   <div class="main">
     <router-outlet></router-outlet>
   </div>
+
   <div class="footer"></div>
+
 </div>

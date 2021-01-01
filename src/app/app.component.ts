@@ -15,11 +15,25 @@ export class AppComponent {
   toggleProfile() {
     console.log("profile", this.profile);
     if(this.profile) {
-        this.router.navigate(['/grammar']);
+        this.router.navigate(['/vocabulary']);
     } else {
         this.router.navigate([`/profile`]);
     }
     this.profile = !this.profile;
+    console.log("profile after", this.profile);
+
+  }
+  goToHome() {
+    console.log("profile", this.profile);
+        this.router.navigate([`/vocabulary`]);
+    this.profile = false;
+    console.log("profile after", this.profile);
+
+  }
+  goToProfile() {
+    console.log("profile", this.profile);
+        this.router.navigate([`/profile`]);
+    this.profile = true;
     console.log("profile after", this.profile);
 
   }
