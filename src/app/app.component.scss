@@ -68,6 +68,11 @@
   margin-right:5px;
   margin-top: 2px;
 }
+.mat-stroked-button {
+  padding: 20px;
+  margin-right:5px;
+  margin-top: 2px;
+}
 //.header { grid-area: header;
   //background-color: #b9908c;
   //max-height: 12vh; 
@@ -102,6 +107,7 @@
     display: inline-block;
     cursor: pointer;
     color: #666666;
+    color: #bf7f78;
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
@@ -115,7 +121,8 @@
   cursor: none
 }
 .activeTab {
-  color:black;
+  color:#8a2f12;
+  color: #863c25;
   opacity:.65;
   cursor: none;
   //pointer-events: none;
@@ -126,13 +133,14 @@
     //background: linear-gradient(to bottom, #e9908c 5%, #d9908c 100%);
     background-color: #e9908c;
     background-color: #ffffff;
-    opacity:.85;
+    opacity:.95;
     border-radius: 6px;
     //border: 1px solid #84bbf3;
     display: inline-block;
     cursor: pointer;
     color: #b9908c;
     color: #bf7f78;
+    color: #863c25;
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
