@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: [col-1] 40px [col-2] 50px [col-3] auto [col-4] 50px [col-5] 50px [cols-end];
+  grid-template-rows: [row-1] 25% [row-2] 100px [row-3] 50px [rows-end];
+  //background-color: yellow;
+  min-height: 70vh;
+
+}
+.grid-item {
+  padding: 10px;
+  color: #9a5e5e;
+}
