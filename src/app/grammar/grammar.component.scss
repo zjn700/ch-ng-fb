@@ -1,9 +1,20 @@
+.container2 {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  //grid-template-rows: auto;
+  grid-auto-rows: 15vh;
+  grid-auto-rows: 10vh;
+  grid-row-gap: 8vh;
+  line-height: 1.1;
+  cursor: move;
+  user-select: none;
+}
+
 .container {
   display: grid;
 
   grid-template-columns: 1fr 1fr ;
   //grid-template-rows: 12vh 12vh 12vh 12vh;
-
   grid-auto-rows: 12vh;
     /* space between columns for demo */
   grid-gap: 20px;
