@@ -6,8 +6,10 @@
 
   grid-auto-rows: 12vh;
     /* space between columns for demo */
-  grid-gap: 10px;
-  line-height: 1.2;
+  grid-gap: 20px;
+  grid-row-gap: 35px;
+  line-height: 1;
+  //line-height: 1.2;
   //grid-template-areas:
   //"top top top"
   //"head head2  side"

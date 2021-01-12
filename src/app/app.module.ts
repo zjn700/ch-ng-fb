@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatTabsModule,
+    MatToolbarModule,
     MatIconModule
   ],
   providers: [],

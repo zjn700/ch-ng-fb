@@ -540,8 +540,21 @@
         <!--<mat-tab label="Second"> Content 2 </mat-tab>-->
         <!--<mat-tab label="Third"> Content 3 </mat-tab>-->
     <!--</mat-tab-group>-->
+<!--<mat-toolbar color="primary">-->
+    <!--<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">-->
+      <!--<mat-icon>menu</mat-icon>-->
+    <!--</button>-->
+    <!--<span>My App</span>-->
+    <!--<span class="example-spacer"></span>-->
+    <!--<button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">-->
+      <!--<mat-icon>favorite</mat-icon>-->
+    <!--</button>-->
+    <!--<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">-->
+      <!--<mat-icon>share</mat-icon>-->
+    <!--</button>-->
+  <!--</mat-toolbar>-->
 
-<div class="grid-container">
+<div class="grid-container-fixed">
   <div class="starter">
     <button mat-icon-button (click)="goToHome()">
       <mat-icon [className]="profile ? 'material-icons' : 'material-icons activeTab'" >home</mat-icon>
@@ -559,6 +572,8 @@
     </nav>
     <nav [className]="profile ? 'show-me' : 'hide-me'">
       <a class="button" routerLinkActive="activeButton" routerLink="/profile">Profile</a> 
+      <!--<a mat-button color="accent"  routerLinkActive="activeButton" routerLink="/profile">Profile</a> -->
+      <!--<a mat-raised-button color="accent"  routerLinkActive="activeButton" routerLink="/profile">Profile</a> -->
       <!--<a mat-stroked-button  routerLinkActive="activeButton" routerLink="/profile">Profile</a> -->
     </nav>
   </div>
@@ -569,7 +584,12 @@
       <!--<i [className]="profile ? 'material-icons activeTab' : 'material-icons'" class="material-icons">account_circle</i>-->
     </button>
   </div>
+</div>
 
+
+
+<div class="centered">
+  <div class="grid-container">
   <div class="main">
     <router-outlet></router-outlet>
   </div>

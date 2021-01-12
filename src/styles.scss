@@ -1,4 +1,6 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+//@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 /* You can add global styles to this file, and also import other style files */
 .bg{
@@ -6,6 +8,7 @@
     height: 100%;
     /*background: url(/assets/images/athena-drawn.png) no-repeat center;*/
     background-color: #b9baa9;
+    background-color: #fbfbf7;
     /*width: 100vw;*/
     min-height: 100vh;
     /*background-size: 100% 100%;*/

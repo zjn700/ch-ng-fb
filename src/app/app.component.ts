@@ -24,17 +24,21 @@ export class AppComponent {
 
   }
   goToHome() {
-    console.log("profile", this.profile);
-        this.router.navigate([`/vocabulary`]);
-    this.profile = false;
-    console.log("profile after", this.profile);
+    if (this.profile) {
+      console.log("profile", this.profile);
+          this.router.navigate([`/vocabulary`]);
+      this.profile = false;
+      console.log("profile after", this.profile);
+    }
 
   }
   goToProfile() {
-    console.log("profile", this.profile);
-        this.router.navigate([`/profile`]);
-    this.profile = true;
-    console.log("profile after", this.profile);
+    if (!this.profile) {
+        console.log("profile", this.profile);
+          this.router.navigate([`/profile`]);
+      this.profile = true;
+      console.log("profile after", this.profile);
+    }
 
   }
 }
